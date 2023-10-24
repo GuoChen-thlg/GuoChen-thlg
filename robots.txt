@@ -1,0 +1,15 @@
+User-agent: *
+
+Allow: /
+Allow: /archives/ 
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /lib/
+Disallow: /dist/
+Disallow: /fonts/
+Disallow: /live2dw/
+
+
+Sitemap: https://blog.thlg.xyz/sitemap.xml
+Sitemap: https://blog.thlg.xyz/baidusitemap.xml
