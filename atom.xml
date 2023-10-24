@@ -35,9 +35,9 @@
       <category term="Nginx" scheme="https://blog.thlg.xyz/categories/Nginx/"/>
     
     
-      <category term="nginx" scheme="https://blog.thlg.xyz/tags/nginx/"/>
-    
       <category term="linux" scheme="https://blog.thlg.xyz/tags/linux/"/>
+    
+      <category term="nginx" scheme="https://blog.thlg.xyz/tags/nginx/"/>
     
   </entry>
   
@@ -211,9 +211,9 @@
       <category term="Linux" scheme="https://blog.thlg.xyz/categories/Linux/"/>
     
     
-      <category term="node" scheme="https://blog.thlg.xyz/tags/node/"/>
-    
       <category term="linux" scheme="https://blog.thlg.xyz/tags/linux/"/>
+    
+      <category term="node" scheme="https://blog.thlg.xyz/tags/node/"/>
     
       <category term="nvm" scheme="https://blog.thlg.xyz/tags/nvm/"/>
     
