@@ -453,9 +453,9 @@ document.querySelector(`#${id}`).src=canvas.toDataURL()
       <category term="Echarts" scheme="https://blog.thlg.xyz/categories/Echarts/"/>
     
     
-      <category term="vue" scheme="https://blog.thlg.xyz/tags/vue/"/>
-    
       <category term="echarts" scheme="https://blog.thlg.xyz/tags/echarts/"/>
+    
+      <category term="vue" scheme="https://blog.thlg.xyz/tags/vue/"/>
     
       <category term="vue-echarts" scheme="https://blog.thlg.xyz/tags/vue-echarts/"/>
     
@@ -1149,11 +1149,11 @@ document.querySelector(`#${id}`).src=canvas.toDataURL()
       <category term="Shopify" scheme="https://blog.thlg.xyz/categories/Shopify/"/>
     
     
+      <category term="node" scheme="https://blog.thlg.xyz/tags/node/"/>
+    
       <category term="shopify" scheme="https://blog.thlg.xyz/tags/shopify/"/>
     
       <category term="next" scheme="https://blog.thlg.xyz/tags/next/"/>
-    
-      <category term="node" scheme="https://blog.thlg.xyz/tags/node/"/>
     
   </entry>
   
