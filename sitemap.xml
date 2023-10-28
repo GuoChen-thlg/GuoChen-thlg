@@ -417,27 +417,6 @@
 
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/chrome/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.thlg.xyz/tags/docker/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
@@ -459,6 +438,27 @@
   </url>
   
   <url>
+    <loc>https://blog.thlg.xyz/tags/chrome/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.thlg.xyz/tags/Git/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
@@ -473,20 +473,6 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/Shopify/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/Liquid/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.thlg.xyz/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
@@ -495,41 +481,6 @@
   
   <url>
     <loc>https://blog.thlg.xyz/tags/linux/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/%E8%B7%A8%E5%9F%9F/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/Redux/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/shopify/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/next/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/node/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -571,6 +522,34 @@
   </url>
   
   <url>
+    <loc>https://blog.thlg.xyz/tags/Shopify/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/Liquid/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/%E8%B7%A8%E5%9F%9F/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/Redux/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.thlg.xyz/tags/Shopify-%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
@@ -579,62 +558,6 @@
   
   <url>
     <loc>https://blog.thlg.xyz/tags/Shopify-%E5%85%AC%E5%85%B1%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/error/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/cmd/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/vscode/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/koa-body/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/koa/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/nvm/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/jest/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -662,21 +585,21 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/nginx-%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    <loc>https://blog.thlg.xyz/tags/shopify/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/moule/</loc>
+    <loc>https://blog.thlg.xyz/tags/next/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/echarts/</loc>
+    <loc>https://blog.thlg.xyz/tags/node/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -690,7 +613,91 @@
   </url>
   
   <url>
+    <loc>https://blog.thlg.xyz/tags/axios/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/echarts/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.thlg.xyz/tags/vue-echarts/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/koa-body/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/koa/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/jest/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/nvm/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/nginx-%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/error/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/cmd/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/vscode/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/moule/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -705,13 +712,6 @@
   
   <url>
     <loc>https://blog.thlg.xyz/tags/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/axios/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -767,6 +767,20 @@
   </url>
   
   <url>
+    <loc>https://blog.thlg.xyz/tags/element-plus/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/tab%E5%88%87%E6%8D%A2/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.thlg.xyz/tags/webpack/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
@@ -775,6 +789,13 @@
   
   <url>
     <loc>https://blog.thlg.xyz/tags/%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -795,42 +816,7 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/element-plus/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/tab%E5%88%87%E6%8D%A2/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/yarn/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/npm/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.thlg.xyz/tags/font/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -845,6 +831,20 @@
   
   <url>
     <loc>https://blog.thlg.xyz/tags/css%E5%B8%83%E5%B1%80/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/yarn/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/npm/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -886,20 +886,6 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/tags/Shopify%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.thlg.xyz/tags/Hexo/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
@@ -928,14 +914,14 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/%E7%94%B5%E8%A7%86%E7%9B%92%E5%AD%90/</loc>
+    <loc>https://blog.thlg.xyz/tags/%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</loc>
+    <loc>https://blog.thlg.xyz/tags/Shopify%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -956,7 +942,14 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/tags/%E5%B8%B8%E7%94%A8CSS/</loc>
+    <loc>https://blog.thlg.xyz/tags/%E7%94%B5%E8%A7%86%E7%9B%92%E5%AD%90/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -969,24 +962,17 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://blog.thlg.xyz/tags/%E5%B8%B8%E7%94%A8CSS/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://blog.thlg.xyz/categories/JS/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/HTTP/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>https://blog.thlg.xyz/categories/Docker/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1000,7 +986,21 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/categories/Docker/</loc>
+    <loc>https://blog.thlg.xyz/categories/HTTP/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/JS/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1014,14 +1014,21 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/categories/%E6%96%87%E6%A1%A3/</loc>
+    <loc>https://blog.thlg.xyz/categories/linux/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/categories/linux/</loc>
+    <loc>https://blog.thlg.xyz/categories/Nginx/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1049,49 +1056,7 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/categories/Nginx/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/%E6%8A%A5%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/%E6%96%87%E6%A1%A3/Liquid/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/Linux/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/Jest/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/%E6%96%87%E6%A1%A3/jQuery/</loc>
-    <lastmod>2023-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thlg.xyz/categories/Node/</loc>
+    <loc>https://blog.thlg.xyz/categories/Vue/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1105,7 +1070,35 @@
   </url>
   
   <url>
-    <loc>https://blog.thlg.xyz/categories/Vue/</loc>
+    <loc>https://blog.thlg.xyz/categories/Jest/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/Linux/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/%E6%96%87%E6%A1%A3/Liquid/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/%E6%8A%A5%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/Node/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1127,6 +1120,13 @@
   
   <url>
     <loc>https://blog.thlg.xyz/categories/webpack/</loc>
+    <lastmod>2023-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thlg.xyz/categories/%E6%96%87%E6%A1%A3/jQuery/</loc>
     <lastmod>2023-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
