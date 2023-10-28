@@ -1149,11 +1149,11 @@ document.querySelector(`#${id}`).src=canvas.toDataURL()
       <category term="Shopify" scheme="https://blog.thlg.xyz/categories/Shopify/"/>
     
     
+      <category term="node" scheme="https://blog.thlg.xyz/tags/node/"/>
+    
       <category term="shopify" scheme="https://blog.thlg.xyz/tags/shopify/"/>
     
       <category term="next" scheme="https://blog.thlg.xyz/tags/next/"/>
-    
-      <category term="node" scheme="https://blog.thlg.xyz/tags/node/"/>
     
   </entry>
   
