@@ -1,3 +1,3 @@
-// build time:Sat May 11 2024 16:32:00 GMT+0800 (China Standard Time)
+// build time:Sat May 11 2024 16:33:41 GMT+0800 (China Standard Time)
 $(document).ready(function(){var rpath=window.location.href.replace(window.location.origin,"");var timeout;$(window).on("scroll",function(){clearTimeout(timeout);timeout=setTimeout(function(){Cookies.set("scroll-cookie",$(window).scrollTop()+"|"+rpath,{expires:365,path:""})},250)});if(Cookies.get("scroll-cookie")!==undefined){var cvalues=Cookies.get("scroll-cookie").split("|");if(cvalues[1]==rpath){$(window).scrollTop(cvalues[0])}}});
 //rebuild by neat 
