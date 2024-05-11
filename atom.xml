@@ -453,9 +453,9 @@ document.querySelector(`#${id}`).src=canvas.toDataURL()
       <category term="Echarts" scheme="https://blog.thlg.xyz/categories/Echarts/"/>
     
     
-      <category term="vue" scheme="https://blog.thlg.xyz/tags/vue/"/>
-    
       <category term="echarts" scheme="https://blog.thlg.xyz/tags/echarts/"/>
+    
+      <category term="vue" scheme="https://blog.thlg.xyz/tags/vue/"/>
     
       <category term="vue-echarts" scheme="https://blog.thlg.xyz/tags/vue-echarts/"/>
     
