@@ -152,7 +152,7 @@
   <entry>
     <title>Centos Docker 可视化管理 Portainer 安装部署</title>
     <url>/2021/07/31/CentosDocker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86Portainer%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/31287/</url>
-    <content><![CDATA[<p>Portainer 是 Docker 的图形化管理工具，提供状态显示面板、应用模板快速部署、容器镜像网络数据卷的基本操作（包括上传下载镜像，创建容器等操作）、事件日志显示、容器控制台操作、Swarm 集群和服务等集中管理和操作、登录用户管理和控制等功能。功能十分全面，基本能满足中小型单位对容器管理的全部需求</p><a id="more"></a><p>默认 Docker 环境</p><blockquote><p>linux x86_64 CentOS Linux 8</p></blockquote><blockquote><p>Docker Version 20.10.7 (API: 1.41)</p></blockquote><h2 id="Portainer-安装与部署"><a href="#Portainer-安装与部署" class="headerlink" title="Portainer 安装与部署"></a>Portainer 安装与部署</h2><figure class="highlight stata"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">cd</span> /<span class="keyword">var</span>/www/</span><br><span class="line"></span><br><span class="line"><span class="keyword">mkdir</span> portainer_data</span><br><span class="line"></span><br><span class="line">docker <span class="keyword">run</span> -it -<span class="keyword">d</span> -p 9000:9000 --name portainer --restart always -v /<span class="keyword">var</span>/<span class="keyword">run</span>/docker.sock:/<span class="keyword">var</span>/<span class="keyword">run</span>/docker.sock -v /<span class="keyword">var</span>/www/portainer_data:/data portainer/portainer-ce</span><br></pre></td></tr></tbody></table></figure><p>访问 http://{服务器 ip}:9000</p><p><img src="/2021/07/31/CentosDocker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86Portainer%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/31287/0.png" alt=""></p><p><img src="/2021/07/31/CentosDocker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86Portainer%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/31287/1.png" alt=""></p><p><img src="/2021/07/31/CentosDocker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86Portainer%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/31287/2.png" alt=""></p><!-- rebuild by neat --><script>
+    <content><![CDATA[<p>Portainer 是 Docker 的图形化管理工具，提供状态显示面板、应用模板快速部署、容器镜像网络数据卷的基本操作（包括上传下载镜像，创建容器等操作）、事件日志显示、容器控制台操作、Swarm 集群和服务等集中管理和操作、登录用户管理和控制等功能。功能十分全面，基本能满足中小型单位对容器管理的全部需求</p><a id="more"></a><p>默认 Docker 环境</p><blockquote><p>linux x86_64 CentOS Linux 8</p></blockquote><blockquote><p>Docker Version 20.10.7 (API: 1.41)</p></blockquote><h2 id="Portainer-安装与部署"><a href="#Portainer-安装与部署" class="headerlink" title="Portainer 安装与部署"></a>Portainer 安装与部署</h2><figure class="highlight stata"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">cd</span> /<span class="keyword">var</span>/www/</span><br><span class="line"></span><br><span class="line"><span class="keyword">mkdir</span> portainer_data</span><br><span class="line"></span><br><span class="line">docker <span class="keyword">run</span> -it -<span class="keyword">d</span> -p 9000:9000 --name portainer --restart always -v /<span class="keyword">var</span>/<span class="keyword">run</span>/docker.sock:/<span class="keyword">var</span>/<span class="keyword">run</span>/docker.sock -v /<span class="keyword">var</span>/www/portainer_data:/data portainer/portainer-ce</span><br></pre></td></tr></tbody></table></figure><p>访问 http://{服务器 ip}:9000</p><p><img src="/2021/07/31/CentosDocker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86Portainer%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/31287/0.png" alt></p><p><img src="/2021/07/31/CentosDocker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86Portainer%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/31287/1.png" alt></p><p><img src="/2021/07/31/CentosDocker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86Portainer%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/31287/2.png" alt></p><!-- rebuild by neat --><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -304,7 +304,7 @@
   <entry>
     <title>自动化部署项目至服务器</title>
     <url>/2021/06/10/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E8%87%B3%E6%9C%8D%E5%8A%A1%E5%99%A8/25212/</url>
-    <content><![CDATA[<img id="id_25212" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""><script>{
+    <content><![CDATA[<img id="id_25212" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt><script>{
 const id=`id_25212`
 const text=`Git 自动部署`
 const canvas= document.createElement('canvas')
@@ -354,7 +354,7 @@ document.querySelector(`#${id}`).src=canvas.toDataURL()
   <entry>
     <title>异步请求之并发处理</title>
     <url>/2021/06/08/%E5%BC%82%E6%AD%A5%E8%AF%B7%E6%B1%82%E4%B9%8B%E5%B9%B6%E5%8F%91%E5%A4%84%E7%90%86/19046/</url>
-    <content><![CDATA[<img id="id_19046" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""><script>{
+    <content><![CDATA[<img id="id_19046" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt><script>{
 const id=`id_19046`
 const text=`Promise`
 const canvas= document.createElement('canvas')
