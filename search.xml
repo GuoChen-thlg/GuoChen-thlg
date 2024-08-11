@@ -134,7 +134,7 @@
   <entry>
     <title>自动化部署项目至服务器</title>
     <url>/2021/06/10/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E8%87%B3%E6%9C%8D%E5%8A%A1%E5%99%A8/25212/</url>
-    <content><![CDATA[<img id="id_25212" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt><script>{
+    <content><![CDATA[<img id="id_25212" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""><script>{
 const id=`id_25212`
 const text=`Git 自动部署`
 const canvas= document.createElement('canvas')
@@ -166,7 +166,7 @@ document.querySelector(`#${id}`).src=canvas.toDataURL()
   <entry>
     <title>异步请求之并发处理</title>
     <url>/2021/06/08/%E5%BC%82%E6%AD%A5%E8%AF%B7%E6%B1%82%E4%B9%8B%E5%B9%B6%E5%8F%91%E5%A4%84%E7%90%86/19046/</url>
-    <content><![CDATA[<img id="id_19046" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt><script>{
+    <content><![CDATA[<img id="id_19046" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""><script>{
 const id=`id_19046`
 const text=`Promise`
 const canvas= document.createElement('canvas')
