@@ -32,6 +32,11 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=GuoChen-thlg&&theme=blue-green&hide=html)
 
 
+## My Tokscale Stats
+
+[![Tokscale](https://tokscale.ai/api/embed/GuoChen-thlg/svg?template=graph&color=green&rank=percent&tokens=compact&cost=compact)](https://tokscale.ai/u/GuoChen-thlg)
+
+
 ## My creation
 
 - [Blog](https://blog.thlg.xyz)

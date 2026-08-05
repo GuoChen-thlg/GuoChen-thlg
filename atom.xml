@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.thlg.xyz/"/>
-  <updated>2024-08-16T01:27:35.177Z</updated>
+  <updated>2026-08-05T06:30:08.408Z</updated>
   <id>https://blog.thlg.xyz/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>光标下移被键盘遮挡</title>
+    <link href="https://blog.thlg.xyz/2024/10/24/%E5%85%89%E6%A0%87%E4%B8%8B%E7%A7%BB%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/3481/"/>
+    <id>https://blog.thlg.xyz/2024/10/24/%E5%85%89%E6%A0%87%E4%B8%8B%E7%A7%BB%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/3481/</id>
+    <published>2024-10-24T15:26:55.000Z</published>
+    <updated>2026-08-05T06:30:08.408Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>给文字添加描边</title>
@@ -208,9 +230,9 @@
       <category term="Nginx" scheme="https://blog.thlg.xyz/categories/Nginx/"/>
     
     
-      <category term="linux" scheme="https://blog.thlg.xyz/tags/linux/"/>
-    
       <category term="nginx" scheme="https://blog.thlg.xyz/tags/nginx/"/>
+    
+      <category term="linux" scheme="https://blog.thlg.xyz/tags/linux/"/>
     
   </entry>
   

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>光标下移被键盘遮挡</title>
+    <url>/2024/10/24/%E5%85%89%E6%A0%87%E4%B8%8B%E7%A7%BB%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/3481/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+  </entry>
+  <entry>
     <title>给文字添加描边</title>
     <url>/2024/08/08/%E7%BB%99%E6%96%87%E5%AD%97%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BE%B9/16450/</url>
     <content><![CDATA[<a id="more"></a>]]></content>
@@ -84,8 +89,8 @@
         <category>Nginx</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>nginx</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
