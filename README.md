@@ -27,9 +27,7 @@
 
 ## My GitHub Stats
 
-![](https://github-readme-stats.vercel.app/api?username=GuoChen-thlg&theme=blue-green)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=GuoChen-thlg&&theme=blue-green&hide=html)
+![GitHubCard](https://githubcard.com/GuoChen-thlg.svg)
 
 
 ## My Tokscale Stats

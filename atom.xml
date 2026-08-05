@@ -240,9 +240,9 @@
       <category term="Nginx" scheme="https://blog.thlg.xyz/categories/Nginx/"/>
     
     
-      <category term="linux" scheme="https://blog.thlg.xyz/tags/linux/"/>
-    
       <category term="nginx" scheme="https://blog.thlg.xyz/tags/nginx/"/>
+    
+      <category term="linux" scheme="https://blog.thlg.xyz/tags/linux/"/>
     
   </entry>
   
@@ -363,9 +363,9 @@ document.querySelector(`#${id}`).style.display=`block`
       <category term="Git" scheme="https://blog.thlg.xyz/categories/Git/"/>
     
     
-      <category term="Git" scheme="https://blog.thlg.xyz/tags/Git/"/>
-    
       <category term="自动部署" scheme="https://blog.thlg.xyz/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/"/>
+    
+      <category term="Git" scheme="https://blog.thlg.xyz/tags/Git/"/>
     
   </entry>
   
