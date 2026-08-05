@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.thlg.xyz/"/>
-  <updated>2026-08-05T06:30:08.408Z</updated>
+  <updated>2026-08-05T07:44:28.277Z</updated>
   <id>https://blog.thlg.xyz/</id>
   
   <author>
@@ -21,20 +21,27 @@
     <link href="https://blog.thlg.xyz/2024/10/24/%E5%85%89%E6%A0%87%E4%B8%8B%E7%A7%BB%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/3481/"/>
     <id>https://blog.thlg.xyz/2024/10/24/%E5%85%89%E6%A0%87%E4%B8%8B%E7%A7%BB%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/3481/</id>
     <published>2024-10-24T15:26:55.000Z</published>
-    <updated>2026-08-05T06:30:08.408Z</updated>
+    <updated>2026-08-05T07:44:28.277Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>做移动端页面，尤其是聊天、评论这种底部带输入框的场景，基本都会踩到一个坑：<br></p><p>在 iOS 部分机型上，点开输入框想打字，软键盘一弹出来，把输入框整个盖住了。你低头噼里啪啦打了一串字，结果连光标在哪都看不见，体验瞬间归零。</p><p>一开始我也很懵，明明布局是 <code>position: fixed; bottom: 0</code>，老老实实贴在屏幕底部，怎么就被键盘吃了呢？<br></p><p>今天就把这个坑的来龙去脉和解决办法梳理一下，希望能帮到同样踩坑的你。</p><a id="more"></a><h1 id="问题出在哪"><a href="#问题出在哪" class="headerlink" title="问题出在哪"></a>问题出在哪</h1><p>iOS 软键盘弹出时有个很「任性」的特点：它不像 Android 那样会把页面高度撑开或者压缩布局，而是直接<strong>盖在页面上面</strong>。</p><p>更要命的是，键盘弹出的那一刻，<code>window.innerHeight</code> 根本不会立刻变化，你拿它去算位置，拿到的还是键盘弹出前的旧值。于是输入框还傻乎乎地以为自己在屏幕最底部，实际上早就被键盘盖住了。</p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>既然 <code>innerHeight</code> 不靠谱，那就换一个靠谱的参照物 —— <code>window.visualViewport</code>。</p><p>它可以实时反馈<strong>当前真正可见区域</strong>的高度。那么键盘遮挡的高度，自然就是两者之差：</p><figure class="highlight stylus"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">遮挡高度 = window<span class="selector-class">.innerHeight</span> - window<span class="selector-class">.visualViewport</span>.<span class="attribute">height</span></span><br></pre></td></tr></tbody></table></figure><p>拿到这个差值后，把输入框的 <code>bottom</code> 动态上移这么多，就能把输入框「抬」到键盘上方。等键盘收起了，再把位移去掉，恢复原样。</p><h1 id="关键代码"><a href="#关键代码" class="headerlink" title="关键代码"></a>关键代码</h1><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输入框聚焦时</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showInputBox</span>(<span class="params"></span>) </span>{</span><br><span class="line">  inputEl.focus();</span><br><span class="line">  setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> {</span><br><span class="line">    <span class="comment">// 计算软键盘遮挡的高度</span></span><br><span class="line">    <span class="keyword">const</span> bottom = <span class="built_in">window</span>.innerHeight - <span class="built_in">window</span>.visualViewport.height;</span><br><span class="line">    <span class="comment">// 键盘弹出（bottom &gt; 20）且是 iOS 时才处理</span></span><br><span class="line">    <span class="keyword">if</span> (bottom &gt; <span class="number">20</span> &amp;&amp; isIOS) {</span><br><span class="line">      isAbnormal = <span class="literal">true</span>;</span><br><span class="line">      <span class="comment">// 通过 CSS 变量动态上移输入框</span></span><br><span class="line">      chatStyle[<span class="string">'--bottom'</span>] = bottom + <span class="string">'px'</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// 确保光标所在的输入框滚进可视区域</span></span><br><span class="line">    <span class="built_in">document</span>.activeElement.scrollIntoViewIfNeeded();</span><br><span class="line">    <span class="built_in">document</span>.activeElement.scrollIntoView();</span><br><span class="line">  }, <span class="number">300</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输入框失焦（键盘收起）时</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">handleBlur</span>(<span class="params"></span>) </span>{</span><br><span class="line">  <span class="keyword">if</span> (isAbnormal) {</span><br><span class="line">    isAbnormal = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">delete</span> chatStyle[<span class="string">'--bottom'</span>];</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>样式上，让输入框的 <code>bottom</code> 引用这个变量，有值就偏移，无值就贴底：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.input-box</span> {</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="built_in">var</span>(--bottom, <span class="number">0</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h1 id="几个注意点"><a href="#几个注意点" class="headerlink" title="几个注意点"></a>几个注意点</h1><ul><li><strong>为什么要延迟 300ms</strong>：软键盘弹起来是有动画的，立即计算拿到的可能是还没稳定下来的高度，等一等更准。</li><li><strong>为什么加 <code>isIOS</code> 判断</strong>：Android 键盘一般会主动压缩布局，不需要这套处理，加上判断避免误伤正常机型。</li><li><strong>为什么用 CSS 变量</strong>：比起直接改 <code>bottom</code> 的数值，用变量更干净，失焦时删掉变量就自动复位，不用记原来是多少。</li><li><strong>为什么要 scrollIntoView</strong>：有的场景光抬输入框还不够，配合把光标滚入可视区，双保险，体验才稳。</li></ul><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>说实话，这个「键盘遮挡」问题在 iOS 上花样百出，网上答案也五花八门。我个人觉得 <code>visualViewport</code> 这套是目前最可靠、侵入最小的做法，改造成本低，效果也直观。</p><p>如果你也遇到过类似的坑，欢迎在评论区聊聊你的解法，一起少走弯路 😄</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-      
+      &lt;p&gt;做移动端页面，尤其是聊天、评论这种底部带输入框的场景，基本都会踩到一个坑：&lt;br&gt;&lt;/p&gt;&lt;p&gt;在 iOS 部分机型上，点开输入框想打字，软键盘一弹出来，把输入框整个盖住了。你低头噼里啪啦打了一串字，结果连光标在哪都看不见，体验瞬间归零。&lt;/p&gt;&lt;p&gt;一开始我也很懵，明明布局是 &lt;code&gt;position: fixed; bottom: 0&lt;/code&gt;，老老实实贴在屏幕底部，怎么就被键盘吃了呢？&lt;br&gt;&lt;/p&gt;&lt;p&gt;今天就把这个坑的来龙去脉和解决办法梳理一下，希望能帮到同样踩坑的你。&lt;/p&gt;
     
     </summary>
     
     
+      <category term="移动端" scheme="https://blog.thlg.xyz/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+    
+      <category term="iOS" scheme="https://blog.thlg.xyz/tags/iOS/"/>
+    
+      <category term="移动端" scheme="https://blog.thlg.xyz/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+      <category term="输入法遮挡" scheme="https://blog.thlg.xyz/tags/%E8%BE%93%E5%85%A5%E6%B3%95%E9%81%AE%E6%8C%A1/"/>
+    
+      <category term="visualViewport" scheme="https://blog.thlg.xyz/tags/visualViewport/"/>
     
   </entry>
   
@@ -43,20 +50,23 @@
     <link href="https://blog.thlg.xyz/2024/08/08/%E7%BB%99%E6%96%87%E5%AD%97%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BE%B9/16450/"/>
     <id>https://blog.thlg.xyz/2024/08/08/%E7%BB%99%E6%96%87%E5%AD%97%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BE%B9/16450/</id>
     <published>2024-08-08T14:02:09.000Z</published>
-    <updated>2024-08-16T01:27:35.177Z</updated>
+    <updated>2026-08-05T07:50:05.186Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>做活动页、海报、弹幕标题的时候，经常会碰到一个需求：给文字加一圈描边，让它在花里胡哨的背景上也能看清。<br></p><p>这个效果说难不难，但每次要用都得想半天 —— <code>-webkit-text-stroke</code> 好像有兼容问题，<code>text-shadow</code> 又容易描得歪歪扭扭。今天干脆把几种常用写法整理一下，方便自己以后直接抄。</p><a id="more"></a><h1 id="方案一：text-shadow（兼容性最好）"><a href="#方案一：text-shadow（兼容性最好）" class="headerlink" title="方案一：text-shadow（兼容性最好）"></a>方案一：text-shadow（兼容性最好）</h1><p>用多层 <code>text-shadow</code> 模拟描边，通过 8 个方向的阴影拼出一圈轮廓。兼容性最好，几乎所有浏览器都支持。</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-stroke-shadow</span> {</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">text-shadow</span>:</span><br><span class="line">    <span class="number">1px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">#000</span>,</span><br><span class="line">    -<span class="number">1px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">#000</span>,</span><br><span class="line">    <span class="number">0</span> <span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>,</span><br><span class="line">    <span class="number">0</span> -<span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>,</span><br><span class="line">    <span class="number">1px</span> <span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>,</span><br><span class="line">    -<span class="number">1px</span> <span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>,</span><br><span class="line">    <span class="number">1px</span> -<span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>,</span><br><span class="line">    -<span class="number">1px</span> -<span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>缺点也很明显：阴影是「硬拼」出来的，笔划拐角处容易有缺口，而且代码啰嗦。</p><h1 id="方案二：-webkit-text-stroke（最简洁）"><a href="#方案二：-webkit-text-stroke（最简洁）" class="headerlink" title="方案二：-webkit-text-stroke（最简洁）"></a>方案二：-webkit-text-stroke（最简洁）</h1><p>CSS 提供了专门的描边属性 <code>-webkit-text-stroke</code>，一行搞定，字体越大越能看出对比。</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-stroke-webkit</span> {</span><br><span class="line">  <span class="attribute">-webkit-text-stroke</span>: <span class="number">2px</span> <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>注意两点：</p><ul><li>描边会「压在」文字笔划上，会让字变粗变糊，字号小的时候尤其明显。</li><li>该属性带 <code>-webkit-</code> 前缀，不过 Chrome、Safari、Firefox、Edge 现代版本基本都支持，日常够用。</li></ul><h1 id="方案三：text-stroke-text-shadow-结合（描空心字）"><a href="#方案三：text-stroke-text-shadow-结合（描空心字）" class="headerlink" title="方案三：text-stroke + text-shadow 结合（描空心字）"></a>方案三：text-stroke + text-shadow 结合（描空心字）</h1><p>如果想要「描边空心字」（只有轮廓、里面透出背景），可以搭配 <code>-webkit-text-stroke</code> 把文字颜色设为透明：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-stroke-hollow</span> {</span><br><span class="line">  <span class="attribute">-webkit-text-stroke</span>: <span class="number">2px</span> <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">color</span>: transparent;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>如果想要「外描边、中间是实心」，用 <code>text-shadow</code> 做外圈阴影，再用 <code>text-stroke</code> 兜底：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-stroke-outline</span> {</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">-webkit-text-stroke</span>: <span class="number">1px</span> <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">text-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">4px</span> <span class="number">#000</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h1 id="对比一下"><a href="#对比一下" class="headerlink" title="对比一下"></a>对比一下</h1><table><thead><tr><th>方案</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td>text-shadow</td><td>兼容性最好</td><td>代码多、拐角有缺口</td></tr><tr><td>-webkit-text-stroke</td><td>简洁、效果好</td><td>笔画会被描边变粗、有小字体糊的问题</td></tr><tr><td>stroke + 透明色</td><td>能做空心字</td><td>依赖 -webkit- 前缀</td></tr></tbody></table><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>日常使用我推荐 **<code>-webkit-text-stroke</code>**，简单省事；遇到需要兼容老旧环境或描空心字的情况，再退回到 <code>text-shadow</code> 方案。</p><p>以上就是给文字添加描边的几种写法，希望能帮到正在发愁的你 😄</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-      
+      &lt;p&gt;做活动页、海报、弹幕标题的时候，经常会碰到一个需求：给文字加一圈描边，让它在花里胡哨的背景上也能看清。&lt;br&gt;&lt;/p&gt;&lt;p&gt;这个效果说难不难，但每次要用都得想半天 —— &lt;code&gt;-webkit-text-stroke&lt;/code&gt; 好像有兼容问题，&lt;code&gt;text-shadow&lt;/code&gt; 又容易描得歪歪扭扭。今天干脆把几种常用写法整理一下，方便自己以后直接抄。&lt;/p&gt;
     
     </summary>
     
     
+      <category term="CSS" scheme="https://blog.thlg.xyz/categories/CSS/"/>
+    
+    
+      <category term="CSS" scheme="https://blog.thlg.xyz/tags/CSS/"/>
+    
+      <category term="文字描边" scheme="https://blog.thlg.xyz/tags/%E6%96%87%E5%AD%97%E6%8F%8F%E8%BE%B9/"/>
     
   </entry>
   
@@ -230,9 +240,9 @@
       <category term="Nginx" scheme="https://blog.thlg.xyz/categories/Nginx/"/>
     
     
-      <category term="nginx" scheme="https://blog.thlg.xyz/tags/nginx/"/>
-    
       <category term="linux" scheme="https://blog.thlg.xyz/tags/linux/"/>
+    
+      <category term="nginx" scheme="https://blog.thlg.xyz/tags/nginx/"/>
     
   </entry>
   
