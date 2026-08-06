@@ -275,8 +275,8 @@ DOMException: Failed to execute 'captureStream' on 'HTMLMediaElement': Cannot ca
         <category>Nginx</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>nginx</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -308,8 +308,8 @@ DOMException: Failed to execute 'captureStream' on 'HTMLMediaElement': Cannot ca
         <category>Linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>node</tag>
+        <tag>linux</tag>
         <tag>nvm</tag>
       </tags>
   </entry>
@@ -440,8 +440,8 @@ document.querySelector(`#${id}`).style.display=`block`
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>自动部署</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
