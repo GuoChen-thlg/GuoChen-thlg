@@ -96,7 +96,7 @@
         <category>CSS</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
+        <tag>css</tag>
         <tag>文字描边</tag>
       </tags>
   </entry>
@@ -275,8 +275,8 @@ DOMException: Failed to execute 'captureStream' on 'HTMLMediaElement': Cannot ca
         <category>Nginx</category>
       </categories>
       <tags>
-        <tag>nginx</tag>
         <tag>linux</tag>
+        <tag>nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -305,11 +305,11 @@ DOMException: Failed to execute 'captureStream' on 'HTMLMediaElement': Cannot ca
 </blockquote>
 ]]></content>
       <categories>
-        <category>Linux</category>
+        <category>linux</category>
       </categories>
       <tags>
-        <tag>node</tag>
         <tag>linux</tag>
+        <tag>node</tag>
         <tag>nvm</tag>
       </tags>
   </entry>
@@ -440,8 +440,8 @@ document.querySelector(`#${id}`).style.display=`block`
         <category>Git</category>
       </categories>
       <tags>
+        <tag>git</tag>
         <tag>自动部署</tag>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -579,8 +579,8 @@ document.querySelector(`#${id}`).style.display=`block`
         <category>Echarts</category>
       </categories>
       <tags>
-        <tag>vue</tag>
         <tag>echarts</tag>
+        <tag>vue</tag>
         <tag>vue-echarts</tag>
       </tags>
   </entry>
@@ -1343,7 +1343,7 @@ flush [api]                                                  冲洗日志
         <category>备忘录</category>
       </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -1666,7 +1666,7 @@ flush [api]                                                  冲洗日志
         <category>CSS</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
+        <tag>css</tag>
         <tag>css布局</tag>
       </tags>
   </entry>
@@ -1695,7 +1695,7 @@ flush [api]                                                  冲洗日志
 <p>之后就可以快乐的免密连接了</p>
 ]]></content>
       <categories>
-        <category>Linux</category>
+        <category>linux</category>
       </categories>
       <tags>
         <tag>ssh</tag>
@@ -2330,7 +2330,7 @@ flush [api]                                                  冲洗日志
         <category>Liquid</category>
       </categories>
       <tags>
-        <tag>Shopify</tag>
+        <tag>shopify</tag>
         <tag>Liquid</tag>
       </tags>
   </entry>
